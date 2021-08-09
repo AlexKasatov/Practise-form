@@ -6,7 +6,7 @@ html {
 }
 
 .page {
-  overflow: hidden;
+  overflow: scroll;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -16,6 +16,7 @@ html {
   /* width: 100%; */
   /* height: 100px; */
   /* margin: 0; */
+  /* position: fixed; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,6 +111,93 @@ html {
   text-decoration: none;
 }
 
+/* here's style for form start*/
+
+.form {
+  width: 80%;
+  margin: 40px auto;
+}
+.select,
+.input,
+.select,
+.textarea {
+  padding: 10px;
+  display: block;
+  line-height: 3rem;
+  width: 100%;
+  font-size: 1.2rem;
+  color: #979797;
+  border: 5px solid #000000;
+  box-sizing: border-box;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: 2px solid #00ffa3;
+}
+
+textarea.textarea {
+  line-height: 1.5rem;
+  min-height: 200px;
+  max-height: 300px;
+}
+
+select.select {
+  
+  height: 60px;
+  
+}
+
+.label {
+  display: block;
+  margin-top: 8px;
+}
+
+label,
+span {
+  /* display: block; */
+  font-weight: bold;
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+}
+
+.input[type="radio"],
+.input[type="checkbox"] {
+  display: inline-block;
+  width: 20px;
+  
+}
+
+.input[type="submit"] {
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+  border: 5px solid #000000;
+  background-color: #000000;
+  color: #ffffff;
+  box-sizing: border-box;
+  
+}
+
+
+.input[type="submit"]:active {
+  background-color: #00ffa3;
+  color: #000000;
+  border: 5px solid #00ffa3;
+}
+
+/* .buttom-link {
+  margin: 2.5rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000000;
+  text-decoration: none;
+} */
+
+
+
 @media screen and (min-width: 49px) {
   header {
     flex-wrap: wrap;
@@ -135,4 +223,14 @@ html {
   nav {
     visibility: visible;
   }
+}
+
+@media screen and (min-width: 720px) {
+  .form {
+    width: 40%;
+  }
+  .call-to-action {
+    margin-top: 200px;
+  }
+
 }
