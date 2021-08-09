@@ -71,6 +71,7 @@ html {
 }
 
 .heading {
+  text-align: center;
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -109,6 +110,25 @@ html {
   font-size: 1.2rem;
   color: #000000;
   text-decoration: none;
+}
+
+.congrats-mess {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px;
+  height: 100px;
+  
+
+}
+
+.smile {
+  width: 231.66px;
+  height: 231.66px;
+  position: absolute;
+  bottom: 500px;
+
 }
 
 /* here's style for form start*/
@@ -188,14 +208,7 @@ span {
   border: 5px solid #00ffa3;
 }
 
-/* .buttom-link {
-  margin: 2.5rem;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #000000;
-  text-decoration: none;
-} */
+
 
 
 
